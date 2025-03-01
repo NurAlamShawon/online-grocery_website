@@ -39,17 +39,28 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- style of font -->
     <style>
       .font-sora {
         font-family: "Sora", sans-serif;
       }
+
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+       
+      }
+
+
     </style>
   </head>
   <body class="font-sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <!-- nav bar -->
-      <div class="navbar bg-base-100 container mx-auto bg-transparent mb-24">
+      <div class="navbar bg-base-100 container mx-auto bg-transparent xl:mb-24 lg:mb-24 mb-20  xl:border-0 lg:border-0  border  border-1 border-green-400  ">
         <div class="navbar-start">
           <img src="images/logo-header.png" alt="" srcset="" />
         </div>
@@ -105,7 +116,7 @@
             Register
           </button>
 
-          <div class="dropdown">
+          <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,8 +147,8 @@
         </div>
       </div>
       <!-- hero section -->
-      <section class="container mx-auto bg-transparent space-y-8">
-        <h1 class="font-semibold text-6xl text-center">
+      <section class="container mx-auto bg-transparent space-y-8 ">
+        <h1 class="font-semibold xl:text-6xl lg:text-6xl text-3xl text-center px-8">
           Freshness
           <span class="text-[#1CAE02]">
             You Can <br />
@@ -145,7 +156,7 @@
           >
           On, Prices You’ll Love!
         </h1>
-        <p class="font-regular text-xl text-center">
+        <p class="font-regular xl:text-xl lg:text-xl text-base text-center px-8">
           Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry <br />
           staples, we’ve got you covered every day!
@@ -162,7 +173,7 @@
 
     <main>
       <!-- card -->
-      <section class="mt-32 container mx-auto px-6 xl:px-0">
+      <section class=" xl:mt-24 lg:mt-24 mt-20 container mx-auto px-6 xl:px-0 ">
         <h1 class="font-semibold text-3xl text-[#1CAE02] mb-12">Services</h1>
 
         <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-6">
@@ -222,9 +233,9 @@
       <!-- popular product -->
 
       <section
-        class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] xl:mb-32 lg:mb-28 mb-12 pb-12"
+        class="bg-[#EFEBE3] xl:mb-32 lg:mb-28 mb-12 pb-12"
       >
-        <div class="mt-32 container mx-auto px-6 xl:px-0 xl:p-32">
+        <div class="mt-32 container mx-auto px-6 xl:px-0 xl:p-32 pt-10">
           <h1 class="font-semibold text-3xl text-[#1CAE02] mb-12">
             Popular Products
           </h1>
@@ -435,7 +446,7 @@
       </section>
 
       <!-- arrival and offers -->
-      <section class="mt-32 container mx-auto px-6 xl:px-0">
+      <section class=" xl:mt-24 lg:mt-24 mt-20 container mx-auto px-6 xl:px-0 font-poppins xl:mb-96 lg:mb-96 mb-80 ">
         <h1 class="font-semibold text-3xl text-[#1CAE02] mb-12">
           Arrival & Offers
         </h1>
@@ -471,7 +482,7 @@
           </div>
 
           <div
-            class="flex items-center bg-[#122A63] xl:pl-0 lg:pl-0 pl-8 pb-5 rounded-xl justify-between"
+            class="flex items-center bg-[#122A63] xl:pl-5 lg:pl-5 pl-8 pb-5 rounded-xl justify-between"
           >
             <div class="xL:space-y-5 lg:space-y-5 space-y-2">
               <img
@@ -492,7 +503,7 @@
               <img
                 src="images/india-gate-mock-up.png"
                 alt=""
-                class="xl:mr-16 mr-10 max-w-36 max-h-40 xl:max-w-80 lg:max-w-80 xl:mt-0 mt-4"
+                class="xl:mr-16 mr-10 max-w-36 max-h-40  xl:max-h-72 lg:max-h-72 xl:max-w-80 lg:max-w-80 xl:mt-2 mt-4"
               />
             </div>
           </div>
@@ -500,54 +511,59 @@
       </section>
 
       <!-- email part -->
-      <section
-        class="xl:mt-32 lg:mt-32 mt-10 max-w-xs xl:container lg:container mx-auto bg-[#EFEBE3] rounded-3xl relative -bottom-60"
-      >
-        <div
-          class="xl:flex lg:flex flex-row xl:justify-between lg:justify-between justify-center items-center xl:px-24 lg:px-24 px-6 lg:py-20 xl:py-20 py-6"
-        >
-          <div>
-            <img
-              src="images/vegetable-busket.png"
-              alt=""
-              class="max-w-56 xl:max-w-md lg:max-w-md"
-            />
-          </div>
-          <div class="space-y-6 xl:text-start text-center">
-            <h1 class="font-semibold text-3xl">Get Grocery News!</h1>
-            <p class="font-regular text-xl">
-              Exclusive training tips, ticks, product deals and more.
-            </p>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Enter email" />
-            </label>
-            <button class="btn bg-[#1CAE02] text-white p-4">Subscribe</button>
-          </div>
-        </div>
-      </section>
+     
     </main>
     <!-- footer part -->
-    <footer class="bg-[#1CAE02] pb-32 pt-80">
+     <footer class="bg-[#1CAE02] pb-32 pt-80 relative">
+      <!-- hanging items -->
       <section
-        class="footer container mx-auto sm:footer-horizontal bg-tranparent text-base-content p-10 text-white xl:flex lg:flex flex-row justify-between items-end"
+      class=" w-full max-w-sm  xl:container lg:container mx-auto bg-[#EFEBE3] rounded-3xl absolute left-1/2 bottom-full -translate-x-1/2 translate-y-1/2"
+    >
+      <div
+        class=" space-y-5 xl:flex lg:flex flex-row xl:justify-between lg:justify-between justify-center items-center xl:px-24 lg:px-24 px-6 lg:py-20 xl:py-20 py-6"
       >
-        <aside>
+        <div>
+          <img
+            src="images/vegetable-busket.png"
+            alt=""
+            class="max-w-56 xl:max-w-md lg:max-w-md mx-auto"
+          />
+        </div>
+        <div class="space-y-6 xl:text-start text-center">
+          <h1 class="font-semibold text-3xl">Get Grocery News!</h1>
+          <p class="font-regular text-xl">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <label class="input input-bordered flex items-center gap-2">
+            <input type="text" class="grow" placeholder="Enter email" />
+          </label>
+          <button class="btn bg-[#1CAE02] text-white p-4">Subscribe</button>
+        </div>
+      </div>
+    </section>
+   
+      
+<!-- main footer -->
+      <section
+        class="pl-6 xl:pl-0 lg:pl-0 xl:pt-48 lg:pt-44 pt-20 footer container mx-auto sm:footer-horizontal bg-tranparent text-base-content  text-white xl:flex lg:flex flex-row justify-between items-end"
+      >
+        <aside class="xl:max-w-sm lg:max-w-sm ">
           <img src="images/logo-footer.png" alt="" srcset="" />
           <p class="font-regular text-xl">
-            Discover a world of treats, toys, and <br />
-            essentials handpicked for your furry<br />
+            Discover a world of treats, toys, and 
+            essentials handpicked for your furry
             friends
           </p>
         </aside>
 
-        <nav class="space-y-5">
+        <nav class="space-y-8">
           <a class="link link-hover">Products</a>
           <a class="link link-hover">Services</a>
           <a class="link link-hover">Contact us</a>
         </nav>
 
         <nav>
-          <h6 class="footer-title font-medium text-base text-white">
+          <h6 class=" font-medium text-base text-white">
             Follow Us
           </h6>
           <div class="flex space-x-6">
